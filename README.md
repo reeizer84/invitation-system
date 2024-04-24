@@ -1,0 +1,10 @@
+# Invitation system
+A simple invitation system created in Java using JavaFX. Users' logging and registration handled with SQL database, currently logged users and pending invitations stored and managed by server (multithreading).  
+Initially this was meant to be a chequers game. Unfortunately, ended as the invitation system with user log-on. Will be worked on in the future.  
+UI made in polish language.
+
+### How to run
+1. Setup a database, needed table is in the chequers.sql file. Connection establishes in ConnectionClass.java. There are things like database name, user name and password to login. I use MySQL - if you want other database system or you changed default login and password, look into this file.
+2. Run the server by compiling Server.java. Start as many client as needed - by compiling HelloApplcation.java. You can register user or check for exisiting users in the database.
+3. After logging in, enter the server's ip or type 'local' to connect to local server.
+4. Now you can enter a nick of invited person. Two buttons underneath provide information about received and sent invitations (in this order).
